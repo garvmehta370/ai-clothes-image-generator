@@ -20,8 +20,11 @@ A sophisticated AI pipeline for generating and refining fashion images based on 
    - Fixes hand distortions in generated images
    - Upscales image for higher quality output
 
+**Entire workflow automated via "smolagents" (https://huggingface.co/docs/smolagents)**: Agents autonomously select tools, iterate, and hand off tasks between generation and refinement phases.  
+
 ## Tools Used
 
+- **Smolagents** powers the entire multi-agent pipeline (generation → review → finetuning)
 - **Replicate** for Stable Diffusion workflows
 - **OpenAI GPT-4** for image analysis and prompt refinement
 - **Custom ComfyUI workflows** for precise image generation
